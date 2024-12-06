@@ -58,18 +58,7 @@ const Slider = () => {
         <BsChevronCompactRight size={30} />
       </div>
 
-      {/* Dots for Navigation */}
-      <div className="flex justify-center py-4">
-        {slides.map((_, index) => (
-          <div
-            key={index}
-            onClick={() => setCurrentIndex(index)}
-            className={`h-3 w-3 mx-2 rounded-full cursor-pointer ${
-              currentIndex === index ? "bg-black" : "bg-gray-400"
-            }`}
-          ></div>
-        ))}
-      </div>
+   
     </div>
   );
 };
